@@ -1,9 +1,12 @@
 import React from 'react';
+import SocialLog from './SocialLog';
+import FindUs from './FindUs';
 
 const RightNav = () => {
     return (
-        <div>
-            Right Nav is Here
+        <div className='space-y-5'>
+            <SocialLog></SocialLog>
+            <FindUs></FindUs>
         </div>
     );
 };
