@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import app from "../firebase/firebase.confiq";
+// import app from "../firebase/firebase.confiq";
 import {
   createUserWithEmailAndPassword,
   getAuth,
@@ -8,6 +8,7 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
+import app from "../firebase/firebase.confiq";
 
 export const AuthContext = createContext();
 const auth = getAuth(app);
@@ -32,9 +33,9 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
-  const updateUserProfile = (updatedData) =>{
-    return updateProfile(auth.currentUser, updatedData)
-  }
+  const updateUserProfile = (updatedData) => {
+    return updateProfile(auth.currentUser, updatedData);
+  };
 
   const authInfo = {
     user,
