@@ -24,6 +24,7 @@ const LeftNavbar = () => {
           </NavLink>
         ))}
       </div>
+      
     </div>
   );
 };
