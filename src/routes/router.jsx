@@ -7,6 +7,8 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import NewsDetails from "../pages/NewsDetails";
 import PrivateRoute from "./PrivateRoute";
+import About from "../pages/About";
+import Career from "../pages/Career";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,15 @@ const router = createBrowserRouter([
         path: "",
         element: <Navigate to={"/category/01"}></Navigate>,
       },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/career",
+        element: <Career></Career>,
+      },
+
       {
         path: "/category/:id",
         element: <CategoryNews></CategoryNews>,
@@ -50,10 +61,6 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
     ],
-  },
-  {
-    path: "*",
-    element: <h1>Error</h1>,
   },
 ]);
 

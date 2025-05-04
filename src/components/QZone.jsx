@@ -12,6 +12,7 @@ const QZone = () => {
                 <img src={classImg} alt="Class" className="rounded-lg" />
                 <img src={playground} alt="Playground" className="rounded-lg" />
             </div>
+            <p className='text-center font-bold mt-5'>You ads publish please contact  <span className='text-blue-600'>KAWSAR HOSSEN</span></p>
         </div>
     );
 };
